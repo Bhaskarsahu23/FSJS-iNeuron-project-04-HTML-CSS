@@ -71,6 +71,7 @@ ul li {
     justify-content: space-between;
     align-items: center;
     padding-top: 3rem;
+    z-index: +11;
 }
 
 .navbar-container div > img {
@@ -113,12 +114,10 @@ li:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 5rem;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 20;
+    left: 5;
     min-height: 100vh;
-    z-index: -1;
 }
 
 .banner-container .heading-text {
