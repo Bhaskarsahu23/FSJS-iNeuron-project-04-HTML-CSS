@@ -1,0 +1,148 @@
+:root {
+    --cl-white: hsl(0, 0%, 97%);
+    --cl-black: rgb(0, 0, 0);
+    --cl-purple: hsl(243, 38%, 52%);
+    --cl-grey: hsl(0, 0%, 47%);
+    --cl-heading: hsl(256, 34%, 28%);
+    --cl-span: hsl(243, 38%, 52%);
+    --ff-primary: 'Poppins', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: var(--ff-primary);
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+}
+
+.container {
+    padding: 0 5rem;
+    position: relative;
+}
+
+.nav-button {
+    background-color: var(--cl-purple);
+    color: var(--cl-white);
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    margin-right: 4rem;
+    transition: all 0.2s ease-in;
+}
+
+.nav-button:hover,
+.nav-button:active,
+.nav-button:focus {
+    background-color: var(--cl-white);
+    color: var(--cl-purple);
+    font-weight: bold;
+    border: 0.3rem solid var(--cl-purple);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.navbar-container div > img {
+    width: 10rem;
+    height: 3.8rem;
+    cursor: pointer;
+}
+
+.navbar-container .grow-list {
+    margin-right: 30rem;
+}
+
+.navbar-container .grow-list .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--cl-grey);
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.navbar-container .grow-list .list li:not(:last-of-type) {
+    margin-right: 3rem;
+}
+
+.navbar-container .grow-list .list li:first-of-type {
+    color: var(--cl-black);
+    font-weight: bolder;
+}
+
+.navbar-container .grow-list .list li:hover,
+li:active,
+li:focus {
+    color: var(--cl-black);
+    font-weight: bolder;
+}
+
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    z-index: -1;
+}
+
+.banner-container .heading-text {
+    font-size: 5rem;
+    line-height: 1.1;
+    color: var(--cl-heading);
+}
+
+.banner-container .heading-text span {
+    color: var(--cl-span);
+}
+
+.banner-container .description {
+    color: var(--cl-grey);
+    letter-spacing: 0.2rem;
+    padding: 1rem 0 3rem 0;
+}
+
+.banner-container .btn {
+    padding: 1.5rem 3.5rem;
+}
+
+.banner-container div:last-of-type img {
+    margin-top: 2rem;
+    width: 100rem;
+    height: 60rem;
+}
